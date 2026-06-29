@@ -67,14 +67,14 @@
     <script>
         // ─── Configure your 8 team members here ─────────────────────────
         const team = [
-            { name: "Ha",  timezone: "Asia/Ho_Chi_Minh" },
-            { name: "Joel",    timezone: "Australia/Melbourne" },
-            { name: "Lennox", timezone: "Africa/Accra" },
-            { name: "Mahesvaran",  timezone: "Asia/Kolkata" },
-            { name: "Nicole",   timezone: "Asia/Kuala_Lumpur" },
-            { name: "Prabhu", timezone: "Asia/Kolkata" },
-            { name: "Sreng",   timezone: "Asia/Phnom_Penh" },
-            { name: "Sruthi",   timezone: "Asia/Kolkata" }
+            { name: "Ha",  timezone: "Asia/Ho_Chi_Minh", city: "Ho Chi Minh City, Vietnam" },
+            { name: "Joel",    timezone: "Australia/Melbourne", city: "Docklands, Australia" },
+            { name: "Lennox", timezone: "Africa/Accra", city: "Kumasi, Ghana" },
+            { name: "Mahesvaran",  timezone: "Asia/Kolkata", city: "Chennai, India" },
+            { name: "Nicole",   timezone: "Asia/Kuala_Lumpur", city: "Kuala Lumpur, Malaysia" },
+            { name: "Prabhu", timezone: "Asia/Kolkata", city: "Chennai, India" },
+            { name: "Sreng",   timezone: "Asia/Phnom_Penh", city: "Phnom Penh, Cambodia" },
+            { name: "Sruthi",   timezone: "Asia/Kolkata", city: "Chennai, India" }
         ];
         // ─────────────────────────────────────────────────────────────────
 
@@ -102,7 +102,7 @@
                 card.setAttribute('aria-label', member.name + ' local time');
                 card.innerHTML = `
                     <div class="name">${member.name}</div>
-                    <div class="tz">${member.timezone}</div>
+                    <div class="tz">${member.city}</div>
                     <div class="time" aria-live="polite">${timeStr}</div>
                     <div class="date">${dateStr}</div>
                 `;
